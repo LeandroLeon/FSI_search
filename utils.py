@@ -806,7 +806,7 @@ class PriorityQueue(Queue):
             return self.A.pop()[1]
 
 
-class astarFringe(Queue):
+class subestFringe(Queue):
     """ Fringe that is sorted after append an element with f(n) = g(n) + h(n)"""
     def __init__(self, problem):
         self.problem=problem

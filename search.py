@@ -199,7 +199,7 @@ def best_first_graph_search(problem, f):
 greedy_best_first_graph_search = best_first_graph_search
     # Greedy best-first search is accomplished by specifying f(n) = h(n).
 
-def astar_search(problem, h=None):
+def ramification_limitation_subest_search(problem, h=None):
     """A* search is best-first graph search with f(n) = g(n)+h(n).
     You need to specify the h function when you call astar_search.
     Uses the pathmax trick: f(n) = max(f(n), g(n)+h(n)).
@@ -207,7 +207,7 @@ def astar_search(problem, h=None):
     Implementar por parte del alumno.
 
     """
-    return graph_search(problem, astarFringe(problem))
+    return graph_search(problem, subestFringe(problem))
 
     pass
 
